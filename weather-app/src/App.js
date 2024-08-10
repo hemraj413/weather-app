@@ -19,7 +19,7 @@ const App = () => {
         setWeatherData(response.data)
         setError(null)
       }catch (e){
-        setError("something's wrong")
+        setError(`can't find the city "${city}"`)
       }finally{
         setIsLoading(false)
       }

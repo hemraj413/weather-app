@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import './Component.css'
 
 const Search = ({fetchWeather}) => {
-    const[city,setCity] = useState('london')
+    const[city,setCity] = useState('')
 
     function handleClick(){
         if(city){
             fetchWeather(city)
         }
+        setCity('')
 
 
     }
